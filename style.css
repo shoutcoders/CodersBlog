@@ -14,7 +14,9 @@ body{
     line-height: 22px;
 }
 
-p{ line-height: 22px; font-family: 'Georgia',cambria; font-size: 16px;  line-height: 24px; color: #292929;}
+a{text-decoration: none;}
+
+p{ font-family: 'Open Sans',cambria; font-size: 16px;  line-height: 24px; color: #333333;}
 
 header {
 	width: 100%;
@@ -32,7 +34,6 @@ header {
 	float: left;
 }
 .title h1 {
-	color: #fff;
 	text-align: center;
 	margin-top:-10px;
 }
@@ -40,8 +41,9 @@ header {
 	display: block;
 	padding-top: 5px;
 }
-
-.title h6{ text-align: center; margin: -40px; color: #fff;}
+.title h6{ text-align: center; margin: -40px; color: #FF6300;}
+.title h1 a{ color: #FF6300;text-decoration: none;}
+.title h1 a:hover{ color: #eee;}
 /* Title of blog designed here with image*/
 
 .navigation {
@@ -78,7 +80,7 @@ header {
 
 /* Main Content Styling Starts Now*/
 .content{width: 80%;}
-.maincontent{width: 80%; margin-top: 5px; margin-bottom: 5px; float: left;}
+.maincontent{width: 68%; margin-top: 5px; margin-bottom: 5px; float: left;}
 
 /*** Article Post Styling ***/
 
@@ -96,6 +98,22 @@ article.post p{ margin-top: 10px;}
 
 /*** Article Post Styling Ends ***/
 
+/*******Main Content Styling Ends Here *****/
+
+
+/*** Sidebar Styling Starts**/
+.mainsidebar{
+    width: 30%;
+    float: right;
+}
+
+aside#categories-3{
+    border: 1px solid #eee;
+}
+
+/*** Sidebar Styling Ends Here **/
+
+
 
 /*Meta Description*/
 small{ color: #333;
@@ -104,6 +122,9 @@ font-family: 'Georgia';
 }
 small a{ color: #333;}
 /*Meta Description*/
+
+
+
 
 /**** Footer Link Designing ****/
 footer{clear: both;}
@@ -117,7 +138,7 @@ footer .footer-Innerlinks{
     background-color: rgb(1, 34, 47);
 }
 
-.importantlinks{ width: 50%; list-style: none; text-align: right;
+.importantlinks{ width: 50%; list-style: none; text-align: right; float: right;
 }
  .importantlinks ul li{ display: inline; }
 
@@ -128,9 +149,10 @@ footer .footer-Innerlinks{
 .copyright{width:  50%;  float: left;}
 
 .copyright p{ 
-	text-align: center;
-  color: #e4e4e4;
+	text-align: left;
+    color: #e4e4e4;
 	line-height: 50px;
+    padding-left: 20px;
 }
 
 
