@@ -43,9 +43,8 @@ function shoutcoders_setup() {
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * See: https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
+    
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 825, 510, true );
 
@@ -111,6 +110,8 @@ function shoutcoders_widgets_init() {
     'name' => __( 'Footer Widget Area', 'shoutcoders' ),
     'id'            => 'footerbar-1',
     'description'   => __( 'Add widgets in Footer Area', 'shoutcoders' ),
+    'before_widget' => '<div id="%1$s" class="footerbox %2$s">',
+        'after_widget'  => '</div>',
     ));
 }
 add_action( 'widgets_init', 'shoutcoders_widgets_init' );
@@ -132,8 +133,8 @@ add_action( 'wp_head', 'shoutcoders_javascript_detection', 0 );
 
 function shoutcoders_scripts() {
 	
-	// Add Genericons, used in the main stylesheet.
-	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.2' );
+    wp_register_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+    wp_enqueue_style( 'fontawesome');
 
 	// Load our main stylesheet.
 	wp_enqueue_style( 'style', get_stylesheet_uri() );

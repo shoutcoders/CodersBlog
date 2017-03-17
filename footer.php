@@ -1,6 +1,6 @@
 <footer>
     
-    
+    <?php dynamic_sidebar('footerbar-1'); ?>
     <div class="footer-Innerlinks">
          <div class="copyright">
             <p>Copyright - &copy; <?php echo date('Y');?> </p>

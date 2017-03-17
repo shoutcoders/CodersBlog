@@ -43,7 +43,7 @@ header {
 }
 .title h6{ text-align: center; margin: -40px; color: #FF6300;}
 .title h1 a{ color: #FF6300;text-decoration: none;}
-.title h1 a:hover{ color: #eee;}
+
 /* Title of blog designed here with image*/
 
 .navigation {
@@ -79,8 +79,12 @@ header {
 }
 
 /* Main Content Styling Starts Now*/
-.content{width: 80%;}
-.maincontent{width: 68%; margin-top: 5px; margin-bottom: 5px; float: left;}
+
+.site-content{ width: 80%;}
+.main-column{ width: 66%; float: left;}
+.secondary-column{ width: 30%; float:right;}
+
+.maincontent{width: 100%; margin-top: 5px; margin-bottom: 5px; float: left;}
 
 /*** Article Post Styling ***/
 
@@ -92,8 +96,6 @@ article.post:last-of-type{ border-bottom: none;}
 
 article.post h2 a{ text-decoration: none; color: #333;}
 
-article.post h2 a:hover{color: #FF6300;}
-
 article.post p{ margin-top: 10px;}
 
 /*** Article Post Styling Ends ***/
@@ -101,19 +103,101 @@ article.post p{ margin-top: 10px;}
 /*******Main Content Styling Ends Here *****/
 
 
-/*** Sidebar Styling Starts**/
-.mainsidebar{
-    width: 30%;
-    float: right;
+
+/********************************************
+**********Sidebar Styling Starts************
+*********************************************/
+
+
+
+aside#categories-3 {
+    border: 1px solid #999;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
 }
 
-aside#categories-3{
-    border: 1px solid #eee;
+aside#categories-3 ul {
+    list-style: none;
+    margin-left: -40px;
+}
+aside#categories-3 ul li {
+    padding-left: 20px;
 }
 
-/*** Sidebar Styling Ends Here **/
+h2.widget-title {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FF6300;
+}
+
+/********  Category Icons Insertions   *******/
+ul li.cat-item.cat-item.fa{ padding-right: 5px;}
+
+ul li.cat-item.cat-item-1 a::before {
+    content: '\f015 ';
+    font-family: FontAwesome;
+}
+ul li.cat-item.cat-item-4 a::before {
+    content: '\f016 ';
+    font-family: FontAwesome;
+}
 
 
+/********  Category Icons Insertions Ends *******/
+/***************************  Category Styling **************************/
+
+
+
+/************* Recent Posts Styling *************/
+aside#recent-posts-3 {
+    border: 1px solid #999;
+    padding-bottom: 10px;
+}
+
+aside#recent-posts-3 ul {
+    list-style: none;
+    margin-left: -40px;
+}
+
+aside#recent-posts-3 ul li {
+    padding-left: 20px;
+}
+
+aside#recent-posts-3 ul li::before {
+    content: '\f138';
+    font-family: FontAwesome;
+}
+
+/************* Recent Posts Styling Endss *************/
+
+/********************************************
+**********Sidebar Styling Ends Here ************
+*********************************************/
+
+
+/*** Read More Button Styling ***/
+
+.readmore {
+    border: 2px solid #0c7fad;
+margin-top: 10px !important;
+display: block;
+width: 180px;
+text-align: center;
+padding: 10px 0px;
+font-size: 18px;
+border-radius: 8px;
+background: #01222f;
+clear: both;
+float: left;
+}
+
+.readmore a{ color: #fff;}
+
+.readmore a:hover{ color: #FF6300; }
+
+/*** Read More Button Styling ***/
 
 /*Meta Description*/
 small{ color: #333;
