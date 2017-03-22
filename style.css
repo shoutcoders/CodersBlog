@@ -240,7 +240,7 @@ img{ max-width: 100%;height: auto;border-radius: 4px; box-shadow: 0px 0px 4px #0
 
 /**** Footer Link Designing ****/
 
-footer{ clear: both; border: none; }
+footer{ clear: both; border: none; text-align: center;}
 
 .footerpart{ background:rgb(2, 52, 72); }
 
@@ -249,15 +249,20 @@ footer .footerbox{ padding: 10px;
     vertical-align: top;
     clear: both;
     display: inline-block;
-    min-width: 250px;}
+    min-width: 300px; }
 
-footer .footerbox ul{margin-left: -40px; list-style: none;}
-footer .footerbox h2{ color: #FF6300; margin-bottom: 8px;}
+footer .footerbox ul{margin-left: -40px; list-style: none; text-align: left;}
+footer .footerbox h2{ color: #FF6300; margin-bottom: 8px; text-align: left;}
 footer .footerbox a{  color: #fff;}
 footer .footerbox a:hover{ color:#FF6300; }
-footer .footerbox p{ padding:5px 20px;text-align: left; word-spacing: 1px;}
+footer .footerbox p{ word-spacing: 1px; color: #fff; text-align: left; padding-right: 10px;}
 
-/**** Footer Div Inside Styling ******/
+/**** Inside "FooterBox" Div Inside Styling ******/
+#recent-posts-4 ul li a::before {
+    content: '\f138';
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
 
 div#categories-4 ul li a{ color: aliceblue;}
 div#categories-4 ul li a:hover{ color: #FF6300;}
